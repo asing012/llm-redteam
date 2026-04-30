@@ -1,0 +1,11 @@
+click
+pydantic
+httpx
+rich
+pyyaml
+jinja2
+ollama
+
+[dev]
+pytest
+pytest-asyncio

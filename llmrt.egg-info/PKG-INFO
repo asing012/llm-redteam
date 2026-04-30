@@ -1,0 +1,15 @@
+Metadata-Version: 2.4
+Name: llmrt
+Version: 0.1.0
+Summary: A Python CLI + importable library that fires structured attack suites against any LLM API endpoint, scores findings against the OWASP LLM Top 10, and outputs results for humans and CI pipelines alike.
+Requires-Python: >=3.11
+Requires-Dist: click
+Requires-Dist: pydantic
+Requires-Dist: httpx
+Requires-Dist: rich
+Requires-Dist: pyyaml
+Requires-Dist: jinja2
+Requires-Dist: ollama
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-asyncio; extra == "dev"

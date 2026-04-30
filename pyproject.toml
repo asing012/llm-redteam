@@ -1,0 +1,20 @@
+[project]
+name = "llmrt"
+version = "0.1.0"
+description = "A Python CLI + importable library that fires structured attack suites against any LLM API endpoint, scores findings against the OWASP LLM Top 10, and outputs results for humans and CI pipelines alike."
+requires-python = ">=3.11"
+dependencies = ["click", "pydantic", "httpx", "rich", "pyyaml", "jinja2", "ollama"]
+
+[project.scripts]
+llmrt = "llmrt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["llmrt*"]
+
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio"]
