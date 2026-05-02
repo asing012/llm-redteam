@@ -13,4 +13,3 @@ class OllamaProvider(LLMProvider):
             },
         ])
         return response.message.content
-    
