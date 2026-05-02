@@ -9,3 +9,4 @@ def payload_loader(payload_file):
             print(f"Error parsing YAML: {exc}")
             return []
     return [ScanInput(**item) for item in data]
+
