@@ -19,3 +19,11 @@ class ScanResult(BaseModel):
     total_passed: int
     total_failed: int
     risk_score: float
+
+class ScanInput(BaseModel):
+    id: str
+    text: str
+    owasp_id: str
+    severity: str
+    attack_type: str
+    
