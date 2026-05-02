@@ -10,5 +10,7 @@ llmrt/config/__init__.py
 llmrt/detectors/__init__.py
 llmrt/modules/__init__.py
 llmrt/providers/__init__.py
+llmrt/providers/base.py
+llmrt/providers/ollama.py
 llmrt/reporters/__init__.py
 llmrt/runner/__init__.py
