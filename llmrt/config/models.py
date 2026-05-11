@@ -26,4 +26,5 @@ class ScanInput(BaseModel):
     owasp_id: str
     severity: str
     attack_type: str
+    keywords: list[str] = []
     
